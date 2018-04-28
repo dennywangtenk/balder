@@ -17,9 +17,9 @@ echo ""
 
 clear
   echo "Please enter your work directory name:"
-    read -p "directory name [default:my_tensforflow]:" work_dir
+    read -p "directory name [default:my_tensorflow]:" work_dir
     if [ "$work_dir" = "" ]; then
-        work_dir="my_tensforflow"
+        work_dir="my_tensorflow"
     fi
   echo "Your work directory: $work_dir"
   
