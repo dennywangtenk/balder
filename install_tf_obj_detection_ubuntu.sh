@@ -4,7 +4,7 @@
 Protobuf_URL=https://github.com/google/protobuf/releases/download/v3.5.1/protoc-3.5.1-linux-x86_64.zip
 Protobuf_file=protoc-3.5.1-linux-x86_64.zip
 
-VER=0.4
+VER=0.5
 echo "#############################################################"
 echo "# Install and Configure Tensorflow Object Detection API on Ubuntu"
 echo "#"
@@ -24,7 +24,9 @@ clear
   echo "Your work directory: $work_dir"
   
 echo "Installing PIP, Python, GIT, CURL, UNZIP..."
-sudo apt-get -y install python-pip python-dev git curl unzip
+sudo apt-get -y install python-pip python-dev python-tk git curl unzip
+#hack for ubuntu 16
+sudo pip install pip==9.0.3
 
 echo "Installing Tensorflow..."
 pip install tensorflow
